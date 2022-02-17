@@ -1,0 +1,243 @@
+.template {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 25%);
+}
+/* .container-table-body {
+  padding: 0;
+  border: 1px solid;
+} */
+
+.imagen-list {
+  width: 100%;
+  height: 200px;
+}
+
+.container-table-body {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.container-table-footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.container-responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-row-header-desktop {
+  display: none;
+}
+
+.container-row-header,
+.container-row-body {
+  width: 100%;
+}
+
+.cell-item {
+  width: 100%;
+  border-bottom: 1px solid #dadce0;
+  border-right: 1px solid #dadce0;
+  padding: 1rem;
+}
+
+.container-row-header .cell-item,
+.container-row-header-desktop {
+  font-weight: 600;
+  text-align: center;
+}
+
+.container-row-header .cell-item:last-child {
+  border-bottom-left-radius: 2rem;
+}
+.container-row-header .cell-item:first-child {
+  border-top-left-radius: 2rem;
+}
+
+.container-row-body .cell-item:first-child {
+  border-top-right-radius: 2rem;
+}
+
+.container-row-body .cell-item:last-child {
+  border-bottom-right-radius: 2rem;
+}
+
+.container-btn {
+  width: 100%;
+  padding: 1rem;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.w__card {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+}
+
+.btn-button {
+  padding: 18px 0;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 2rem;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #828282;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.group-form-preview {
+  width: 100%;
+  padding: 0 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.image-preview {
+  width: 100%;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.fw-bold {
+  font-weight: 500;
+}
+
+.bg-warning {
+  background-color: #f4a100 !important;
+}
+
+.bg-primary {
+  background-color: #0061f2 !important;
+}
+
+.bg-success {
+  background-color: #00ac69 !important;
+}
+
+.bg-danger {
+  background-color: #e81500 !important;
+}
+
+.alert__status {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .container-table {
+    flex-direction: row;
+  }
+
+  .imagen-list {
+    display: none;
+  }
+
+  .template {
+    justify-content: center;
+  }
+
+  .container-responsive {
+    margin: 2rem;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 25%);
+    height: auto;
+    border-radius: 2rem;
+  }
+
+  .container-table {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .container-table-body {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .container-table-footer {
+    align-items: center;
+    border-bottom: 1px solid #dadce0;
+  }
+
+  .container-row-header,
+  .container-row-body {
+    display: flex;
+  }
+
+  .container-row-header .cell-item:last-child {
+    border-bottom-left-radius: 0;
+  }
+  .container-row-header .cell-item:first-child {
+    border-top-left-radius: 0;
+  }
+
+  .container-row-body .cell-item:first-child {
+    border-top-right-radius: 0;
+  }
+
+  .container-row-body .cell-item:last-child {
+    border-bottom-right-radius: 0;
+  }
+
+  .container-row-header-desktop {
+    display: none;
+  }
+
+  .container-responsive .container-table .container-row-header:first-child {
+    display: none;
+  }
+
+  /* .container-responsive .container-table:not(:first-child) {
+    background-color: red;
+  } */
+
+  .card__container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .w__card {
+    width: 30%;
+  }
+
+  .w__card__25 {
+    width: 25%;
+    border-radius: 0.5rem;
+  }
+
+  .w__card__35 {
+    width: 35%;
+    border-radius: 0.5rem;
+  }
+}
